@@ -1,9 +1,19 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+
+// Import STyles
+import '../css/index.css';
+import 'normalize.css';
 
 class main{
 
-    //Static
+    //Instances
+    static scene;
+    static camera;
+    static renderer;
+    static controls;
+
+    //Static Vars
     static x;
     static y;
 
